@@ -13,4 +13,4 @@ knockofftools 1.0.0
 The Simulations folder contains code implementing the four distinct data-generating processes (DGPs) for the predictor matrix 
 X considered in the paper: a multivariate normal distribution (Section 3.1), a heavy-tailed Markov chain (Section 3.2), survival regression with a block-correlated AR(1) structure (Section 3.3), and a star-type dependence structure induced by a C-vine copula (Appendix B). It also includes code for the remaining appendices, which examine computational time and the impact of key hyperparameters on the proposed procedures.
 
-The Application folder provides code and data for applying the proposed methodology to a gene expression survival dataset (TCGA_eset) in the context of ovarian cancer research. The TCGA_eset dataset is available through the CuratedOvarianData R package.
+The Application folder provides code for applying the proposed methodology to a gene expression survival dataset (TCGA_eset) in the context of ovarian cancer research. The TCGA_eset dataset is available through the CuratedOvarianData R package.
