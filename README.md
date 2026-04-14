@@ -1,4 +1,4 @@
-This repository contains the source code for the paper "D-Vine Copula Based Knockoffs for Variable Selection in Gene Expression Studies"
+This repository contains the source code for the paper "Vine Copula Knockoffs for Variable Selection in Gene Expression Studies"
 
 The computational implementations of the proposed methods were carried out using R, employing versions 3.6.3.
 
@@ -10,7 +10,7 @@ Matrix_1.5-3             TSP_1.2-4              VineCopula_2.4.5       rvinecopu
 seqknockoff_0.0.0.9000   latentcor_1.2.0 
 knockofftools 1.0.0
 
+The Simulations folder contains code implementing the four distinct data-generating processes (DGPs) for the predictor matrix 
+X considered in the paper: a multivariate normal distribution (Section 3.1), a heavy-tailed Markov chain (Section 3.2), survival regression with a block-correlated AR(1) structure (Section 3.3), and a star-type dependence structure induced by a C-vine copula (Appendix B). It also includes code for the remaining appendices, which examine computational time and the impact of key hyperparameters on the proposed procedures.
 
-The folder 'Simulations' contains code related to three distinct data-generating processes (DGPs) for the predictors X considered in the paper: a multivariate normal distribution, a t-tailed Markov chain, and Survival Regression with Block Correlated AR1 Structure. Additionally, it contains the code for computation time (Appendix A).
-
-The folder 'Application' contains code and data for applying the proposed methodology to a real lung cancer dataset. The 'lung cancer data.csv' contains the top 1000 most expressed genes (in terms of variance) out of a total of 12,259 genes from the genomic dataset of the research by Shedden et al. (2008), located in the Lung Cancer Explorer (LCE) database at http://lce.biohpc.swmed.edu/.
+The Application folder provides code and data for applying the proposed methodology to a gene expression survival dataset (TCGA_eset) in the context of ovarian cancer research. The TCGA_eset dataset is available through the CuratedOvarianData R package.
